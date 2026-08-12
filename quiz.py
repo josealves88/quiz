@@ -17,3 +17,30 @@ else:
     print("Incorrect answer! The correct answer is (A) Paris.")
 
 
+while answer1.lower() != "a":
+    print("Question 1: What is the capital of France?" "\n (A) Paris" "\n (B) London" "\n (C) Berlin" "\n (D) Madrid")
+    answer1 = input("Enter the letter corresponding to your answer: ")
+
+    if answer1.lower() == "a":
+        print("Congratulations! You got it right!")
+    else:
+        print("Incorrect answer again! The correct answer is (A) Paris.")
+
+
+print("Question 1: What is the capital of France?" "\n (A) Paris" "\n (B) London" "\n (C) Berlin" "\n (D) Madrid")
+answer2 = input("Enter the letter corresponding to your answer: ")
+
+attempts = 0
+
+while answer2.lower() != "a" and attempts < 3:
+    print("Question 1: What is the capital of France?" "\n (A) Paris" "\n (B) London" "\n (C) Berlin" "\n (D) Madrid")
+    answer2 = input("Enter the letter corresponding to your answer: ")
+    attempts += 1
+
+    if answer2.lower() == "a":
+        print("Congratulations! You got it right again!")
+        break
+    else:
+        print(f"Incorrect answer! You have {3 - attempts} attempts left.")
+
+
